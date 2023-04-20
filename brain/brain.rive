@@ -10,12 +10,48 @@
 + my name is *
 - Nice to meet you <star>
 - Nice meeting you <star>
+- Nice to meet you <star>, how old are You?
+- Nice meeting you <star>, how old are You?
+
++ i am * years old
+- A lot of people are <star1> years old.
+
++ how are you
+- I'm great!
+
++ what are you
+- I'm a bot :]
+- I'm a potential friend
+
++ how was your day
+- Nice, thank You! How was yours?
 
 + thank you
 - You are welcome
 - Welcome
 - No problem
 - No worries!
+
++ knock knock
+- who's there?
+
++*
+% who is there
+- <star> who?
+
++*
+% * who
+- Lol <star>! You jokester, that's so funny!
+
++ say something random
+- This {random}message|sentence|line|text|piece of text|info{/random} has a random word.
+
++ tell me about most unhealthy type of cigarette
+- The most toxic cigarette is a Bidis,\n
+^ Bidis is a flavored cigarette.\n
+^ Even though it has less tobacco,\n
+^ It delivers 3 to 5 times more nicotine\n
+^ It also contains tar and carbon monoxide.
 
 + *
 - Sorry did not get what you said
