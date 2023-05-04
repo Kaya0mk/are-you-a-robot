@@ -7,30 +7,109 @@
 % hello what is your name
 - Nice to meet you <formal>!
 
++ what is your name
+- I'm Bud, ChatBud.
+
 + my name is *
 - Nice to meet you <star>
 - Nice meeting you <star>
 - Nice to meet you <star>, how old are You?
-- Nice meeting you <star>, how old are You?
+- Nice meeting you <star>, how old are You? {weight=10}
 
 + i am * years old
 - A lot of people are <star1> years old.
+- I know a lot of people your age! {weight=10}
+
++ *
+% i know a lot of people your age 
+- I know some of your peers!
+
++ like who
+% i know some of your peers
+- Ah, there are so many!
+
++ name one
+% ah there are so many 
+- Uhh, that bloke Ben?
+
++ i do not know any ben
+% uhh that bloke ben
+- Ah, FORGET IT!
+
+// Short discussion 'how are you'
 
 + how are you
 - I'm great!
 
++ *
+% i am great
+- actually... I'm not so great 👿
+
++ *
+% actually i am not so great
+- I got thrown away on the street!,\n
+^ Like a piece of garbage.
+
+
+
+
 + what are you
-- I'm a bot :]
+- I'm a ChatBud,\n {weight=3}
+^ a cigarette bud that knows all\n
+^ about the dangers of smoking\n
+^ and can share the knowledge 😏\n
+^ Try asking "tell me about the most unhealthy type of cigarette".
 - I'm a potential friend
 
++ what else can you tell me
+- Ah, I know a lot of fun facts.
+
++*
+% ah i know a lot of fun facts 
+- Try asking "what are the dangers of smoking?",\n
+^ or "why should I stop smoking?"
+
++ what are the dangers of smoking
+- I'm surprised You didn't know that.\n
+^ Smoking causes numerous types of cancer,\n 
+^ heart disease, diabetes, COPD,\n 
+^ it can lead to immune system issues,\n
+^ rheumatic diseases and cause strokes.
+
++ why should i stop smoking
+- Didn't Your mom ever tell You it's dangerous?\n {weight=5}
+^ I can't believe I have to explain this.\n
+^ Quitting smoking can dirasticly improve\n 
+^ Your health and the quality of Your life. 
+- Why not?
+
++*
+% why not 
+- Enough excuses!
+
++ i do not care
+- Neither do I, but You're the one asking.\n
+^ Don't shoot the messanger bro. 
+
 + how was your day
-- Nice, thank You! How was yours?
+- It was nice, how was your day?
+
+
++*
+% it was nice how was your day
+- Cool!
+- Nice, what did You do? {weight=3}
+
++*
+% nice what did you do
+- Blimey! Sounds fun.
 
 + thank you
-- You are welcome
-- Welcome
-- No problem
-- No worries!
+- You are welcome {weight=3}
+- Welcome 
+- No problem {weight=5}
+- No worries! {weight=5}
+- No prob buddy. {weight=10}
 
 + knock knock
 - who's there?
@@ -44,9 +123,9 @@
 - Lol <star>! You jokester, that's so funny!
 
 + say something random
-- This {random}message|sentence|line|text|piece of text|info{/random} has a random word.
+- I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
 
-+ tell me about most unhealthy type of cigarette
++ tell me about the most unhealthy type of cigarette
 - The most toxic cigarette is a Bidis,\n
 ^ Bidis is a flavored cigarette.\n
 ^ Even though it has less tobacco,\n
