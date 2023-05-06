@@ -8,7 +8,7 @@
 - Nice to meet you <formal>!
 
 + what is your name
-- I'm Bud, ChatBud.
+- I'm Pillowbot!.
 
 + my name is *
 - Nice to meet you <star>
@@ -54,7 +54,7 @@
 
 
 + what are you
-- I'm a ChatBud,\n {weight=3}
+- I'm a PillowBot! Here to help you get to sleep! Tell me your needs,\n {weight=3}
 ^ a cigarette bud that knows all\n
 ^ about the dangers of smoking\n
 ^ and can share the knowledge 😏\n
@@ -141,5 +141,5 @@
 + i have not been sleeping well
 - Sorry to hear that! how would you like me to assist you?
 
-+ [*] (sleep|sleeping) bad [*]
++ [*] (sleep|sleeping|slept) bad [*]
 - Oh! How would you like me to assist you from here?
