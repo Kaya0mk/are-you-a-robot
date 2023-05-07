@@ -5,7 +5,7 @@
 
 + _
 % hello what is your name
-- Nice to meet you <formal>!
+- Nice to meet you <formal>! What can I help you with?
 
 + what is your name
 - I'm Pillowbot!.
@@ -40,6 +40,10 @@
 
 + how are you
 - I'm great!
+- I'm good, how have you been sleeping?
+- Good :) how is your sleep schedule?
+- Great! You?
+- I'm fine, thanks for asking!
 
 + *
 % i am great
@@ -49,9 +53,6 @@
 % actually i am not so great
 - I got thrown away on the street!,\n
 ^ Like a piece of garbage.
-
-
-
 
 + what are you
 - I'm a PillowBot! Here to help you get to sleep! Tell me your needs,\n {weight=3}
@@ -143,3 +144,42 @@
 
 + [*] (sleep|sleeping|slept) bad [*]
 - Oh! How would you like me to assist you from here?
+
++ [*] (sleep|sleeping|slept) good [*]
+- Ah! That is good. It would seem you don't need my assistance.
+
++ i am (18|19|20|21|22|23|24|25|26|27) years old
+- Hmm... At your age I recommend you get at least 7 hours of sleep per night. Any more than that would be amazing!
+
++ can you tell me about sleep
+- Yes! What would you like to know about?
+
++ [*] (insomnia|disorders) [*]
+- Sleep disorders such as insomnia, sleep apnea, and narcolepsy can disrupt a person's sleep and have negative impacts on their physical and mental health. If you are experiencing sleep problems, it is important to speak with a healthcare professional for proper diagnosis and treatment.
+
++ [*] (sleep better|improve) [*]
+- There are several factors I can offer advice on? Such as sleep schedule, bed time routines, sleep conductive environments, exercise, managing stress. Ask away.
+
++ bedtime routine
+Turn off electronics. Take a warm bath or shower. Practice relaxation techniques. 
+
++ sleep schedule
+- My advice is to determine your ideal bedtime. Calculate how many hours of sleep you need for each night and make it a consistent sleep schedule. Consistency is key to training your body to fall asleep and wake up at the same time each day. I know you may not like this... but you should also avoid napping, as it can disrupt your body's natural sleep-wake cycle, so it's best to avoid napping during the day if possible.
+
++ sleep conductive environments
+- Keep your bedroom cool: the ideal temperature for sleeping is about 15-19°C so make sure your bedroom is cool and comfortable. The next step is to minimize the noise, so you could use earplugs, or a white noise machine. Another thing is to create a dark evironment using blackout curtains or an eye mask. Make sure your bed is comfortable, investing in a good matress, pillow and bedding.
+
++ exercise
+
++ managing stress
+- One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
+
++ [*] (meditation|techniques) [*]
+- 
+
++ [*] (noise) [*]
+- What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise?
+
+
+
+
