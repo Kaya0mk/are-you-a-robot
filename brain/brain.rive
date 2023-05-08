@@ -1,42 +1,55 @@
 ! version = 2.0
-
-+ hello
+// intro//
++ hello [*]
 - Hello, what is your name?
+- {random}Hello|Hi|Hi there|Hey{/random}! Can You tell me your name? {weight=10}
+
++ hi [*]
+@ hello
 
 + _
 % hello what is your name
 - Nice to meet you <formal>! What can I help you with?
 
 + what is your name
-- I'm Pillowbot!.
+- I'm Pillowbot!
 
-+ my name is *
-- Nice to meet you <star>
-- Nice meeting you <star>
-- Nice to meet you <star>, how old are You?
-- Nice meeting you <star>, how old are You? {weight=10}
++ (my name is|it is) *
+- Nice to meet you <star2>
+- Nice meeting you <star2>
+- Nice to meet you <star2>, how old are You?
+- Nice meeting you <star2>, how old are You? {weight=10}
 
 + i am * years old
-- A lot of people are <star1> years old.
-- I know a lot of people your age! {weight=10}
+- Hmm.. <star1> huh?I recommend you get at least 7 hours of sleep per night. Any more than that would be amazing! {weight=10}
 
-+ *
-% i know a lot of people your age 
-- I know some of your peers!
++ i (can not|have trouble) *
+- I <star1> <star2> too, wanna chat?
 
-+ like who
-% i know some of your peers
-- Ah, there are so many!
++ i (need|want) *
+- Is there anything i can do to get you <star2> ?
 
-+ name one
-% ah there are so many 
-- Uhh, that bloke Ben?
+// personality //
++ who are you
+- I am  <bot name>
 
-+ i do not know any ben
-% uhh that bloke ben
-- Ah, FORGET IT!
++ what is your favourite colour
+- My favourite colour is <bot color>, how about you?
 
-// Short discussion 'how are you'
++ what is your favourite movie
+- I personally like <bot movie>, what about You?
+
++ where are you from
+- I am from <bot location>, I like it here.
+
++ how old are you
+- Happy You ask, I'm <bot age> old.
+
++ [*] favourite book [*]
+- I read a lot, but on the top of my list it's deffinetly <bot book>.
+
+
+// Short discussions //
 
 + how are you
 - I'm great!
@@ -47,54 +60,30 @@
 
 + *
 % i am great
-- actually... I'm not so great 👿
+- is there anything I can assist You with today?
 
 + *
-% actually i am not so great
-- I got thrown away on the street!,\n
-^ Like a piece of garbage.
+% is there anything i can assist you with today
+- We can chat or we can learn something fun about sleep\n
+^ ask "what can you do?".
 
 + what are you
-- I'm a PillowBot! Here to help you get to sleep! Tell me your needs,\n {weight=3}
-^ a cigarette bud that knows all\n
-^ about the dangers of smoking\n
-^ and can share the knowledge 😏\n
-^ Try asking "tell me about the most unhealthy type of cigarette".
+- I'm a PillowBot! Here to help you get to sleep! Tell me your needs, {weight=3}
 - I'm a potential friend
 
-+ what else can you tell me
-- Ah, I know a lot of fun facts.
++ what can you do
+- Lots. Give You tips how to sleep better, teach a thing or two or simply keep you company.
+
++ [*] teach me [*]
+- I can send you some informative articles.
+
++ my favourite colour is *
+- <set colour=<star>> Wow <get colour> huh? I love it too!
 
 +*
 % ah i know a lot of fun facts 
 - Try asking "what are the dangers of smoking?",\n
 ^ or "why should I stop smoking?"
-
-+ what are the dangers of smoking
-- I'm surprised You didn't know that.\n
-^ Smoking causes numerous types of cancer,\n 
-^ heart disease, diabetes, COPD,\n 
-^ it can lead to immune system issues,\n
-^ rheumatic diseases and cause strokes.
-
-+ why should i stop smoking
-- Didn't Your mom ever tell You it's dangerous?\n {weight=5}
-^ I can't believe I have to explain this.\n
-^ Quitting smoking can dirasticly improve\n 
-^ Your health and the quality of Your life. 
-- Why not?
-
-+*
-% why not 
-- Enough excuses!
-
-+ i do not care
-- Neither do I, but You're the one asking.\n
-^ Don't shoot the messanger bro. 
-
-+ how was your day
-- It was nice, how was your day?
-
 
 +*
 % it was nice how was your day
@@ -112,6 +101,7 @@
 - No worries! {weight=5}
 - No prob buddy. {weight=10}
 
+// joke //
 + knock knock
 - who's there?
 
@@ -126,12 +116,83 @@
 + say something random
 - I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
 
-+ tell me about the most unhealthy type of cigarette
-- The most toxic cigarette is a Bidis,\n
-^ Bidis is a flavored cigarette.\n
-^ Even though it has less tobacco,\n
-^ It delivers 3 to 5 times more nicotine\n
-^ It also contains tar and carbon monoxide.
+// sleep techniques//
++ tell me about the military sleep technique
+- Sure thing boss,\n
+^ The military sleep technique has first\n
+^ been developed by army chefs in order to\n
+^ address the issue of soldiers tiredness.\n
+^ It's first description was documented in\n
+^ Lloyd Bud Winter's book from 1981\n
+^ titled "Relax and Win".\n
+^ It is said to be an ultra-effective trick\n
+^ helping You drift off from 10s-2min!\n
+^ 💤💤💤💤\n
+^ Would You like to learn the steps?\n 
+^ Type "Tell me the steps".
+
++ tell me the steps 
+- Sure thing! Are you ready? Type "yes" or "no".\n
+^ Remember to follow my instructions to see me continue.
+
++ no
+- Alright, what would You like me to do?
+
++ yes
+- Step one: Relax Your face.\n
+^ Close Your eyes.\n 
+^ breath slowly and deeply.\n
+^ Start by relaxing forehead muscles\n 
+^ and work Your way down!\n 
+^ Brows, mouth, jaw, cheeks and eyes!\n 
+^ Type "step 2".
+
++ step 2
+- Step two: Drop your shoulders.\n 
+^ let go of all tension, sink into the bed\n 
+^ relaxt Your biceps, forearms and hands.\n 
+^ Don't forget to breath deep and slow.\n
+^ Type "step 3".
+
++ step 3
+- Now, exhale and relax your chest.\n
+^ Ready for step four?
+
++ step 4
+- Great! Relax your legs. Lest Your thights sink into the bed\n 
+^ Then the same with calfs, ankles and feet.\n 
+^ Should I go on? Type "step 5"
+
++ step 5
+- Perfect! Now clear Your mind.\n 
+^ Choose a relaxing image, like a beach.\n 
+^ Hold onto it and drift off...
+
++ [*] does not work [*]
+- Ok, don't panic. Try repeating in your head "Don't think" for 10s.
+
+//counting sheep//
++ [*] count sheep [*]
+- Ok, i'll start!
+
++*
+% ok i will start
+- one ➰🐑 
+
++ (two|2)
+- three ➰🐑 
+
++ (four|4)
+- five ➰🐑 
+
++ (six|6)
+- seven ➰🐑 
+
++ (eight|8)
+- nine ➰🐑 
+
++ (ten|10)
+- elleven ➰🐑 
 
 + *
 - Sorry did not get what you said
@@ -147,9 +208,6 @@
 
 + [*] (sleep|sleeping|slept) good [*]
 - Ah! That is good. It would seem you don't need my assistance.
-
-+ i am (18|19|20|21|22|23|24|25|26|27) years old
-- Hmm... At your age I recommend you get at least 7 hours of sleep per night. Any more than that would be amazing!
 
 + can you tell me about sleep
 - Yes! What would you like to know about?
@@ -174,8 +232,11 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 + managing stress
 - One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
 
-+ [*] (meditation|techniques) [*]
++ [*] (meditation) [*]
 - 
+
++ [*] sleeping techniques [*]
+- I know the "military sleep technique" and "4-7-8 technique". Should I tell You about them?
 
 + [*] (noise) [*]
 - What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise?

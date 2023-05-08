@@ -4,8 +4,14 @@
 // The Botmaster's Name
 ! var master = localuser
 
-// Bot Variables
-! var name     = RB
+// Bot identity
+! var name     = PillowBot
+! var age     = one day
+! var birthday     = first of May
+! var location     = London Camberwell
+! var color    = purple
+! var movie    = Sleepless in Seattle
+! var book     = Mathew Walker "Why We Sleep"
 
 // Substitutions
 ! sub &quot;    = "
@@ -148,6 +154,8 @@
 ! sub (k)       = kissyface
 ! sub (f)       = rose
 ! sub (w)       = wilted rose
+! sub doesn't     = does not
+! sub colour    = color
 
 // Person substitutions
 ! person i am    = you are
@@ -170,3 +178,4 @@
 ! array measure    = inch in centimeter cm millimeter mm meter m inches centimeters millimeters meters
 ! array yes        = yes yeah yep yup ya yea sure ok
 ! array no         = no nah nope nay
+
