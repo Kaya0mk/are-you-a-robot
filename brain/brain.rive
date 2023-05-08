@@ -43,7 +43,7 @@
 - I am from <bot location>, I like it here.
 
 + how old are you
-- Happy You ask, I'm <bot age> old.
+- Happy You asked, I'm <bot age> old.
 
 + [*] favourite book [*]
 - I read a lot, but on the top of my list it's deffinetly <bot book>.
@@ -192,7 +192,7 @@
 - nine ➰🐑 
 
 + (ten|10)
-- elleven ➰🐑 
+- eleven ➰🐑 
 
 + *
 - Sorry did not get what you said
@@ -241,6 +241,6 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 + [*] (noise) [*]
 - What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise?
 
-
++ 
 
 

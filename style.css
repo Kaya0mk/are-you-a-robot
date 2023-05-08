@@ -8,8 +8,17 @@
 }
 
 body {
-  background: #9eb9a8;
+  background-image:url(https://i.pinimg.com/originals/70/10/49/701049f25a0a5c7053ef427308857973.gif);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
 }
+
+<body>
+  <audio>
+    <audio controls>
+      
+  </audio>
 
 .title {
   height: 5vh;
@@ -20,7 +29,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: rgb(76, 117, 96);
+  color: rgb(23, 26, 65);
 }
 
 .wrapper {
@@ -29,7 +38,7 @@ body {
 
 .chat {
   background: rgb(255, 255, 255);
-  box-shadow: 10px 10px 0px hsl(152, 25%, 41%);
+    box-shadow: 10px 10px 0px hsl(296, 28%, 19%);
   overflow: scroll;
   height: 100%;
   display: flex;
@@ -57,23 +66,21 @@ body {
 }
 
 .messages div a:hover {
-  color: rgb(69, 130, 95);
+  color: rgb(39, 22, 42);
 }
 
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background: black;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .messages .self {
   text-align: right;
   margin-right: 20px;
   margin-left: auto;
-  background: white;
-  border: 1px solid rgb(69, 130, 95);
-  color: rgb(84, 153, 114);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .actions {
