@@ -41,3 +41,9 @@ function botReady() {
 function botNotReady(err) {
   console.log("An error has occurred.", err);
 }
+
+
+function changeColor(color) {
+  const body = document.querySelector("body");
+  body.style.background = color
+}

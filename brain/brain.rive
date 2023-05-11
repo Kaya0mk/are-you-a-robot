@@ -1,16 +1,27 @@
 ! version = 2.0
+
+> object changebackground javascript
+    console.log(args)
+    changeColor(args[0]);
+    return '';
+
+< object
+
 // intro//
 + hello [*]
 - Hello, what is your name?
-- {random}Hello|Hi|Hi there|Hey{/random}! Can You tell me your name? {weight=10}
 
-+
++ change color to *
+* <star> == green => OK! <call>changebackground url(https://i.pinimg.com/474x/a1/65/23/a16523f219806ae940d34c8ab59f4003--in-the-clouds-the-sky.jpg)</call>
+* <star> == orange => OK! <call>changebackground url(https://ak.picdn.net/shutterstock/videos/9686807/thumb/1.jpg)</call>
+* <star> == yellow => OK! <call>changebackground url(https://il5.picdn.net/shutterstock/videos/18031918/thumb/1.jpg)</call>
+* <star> == blue => OK! <call>changebackground url(https://i.pinimg.com/originals/e8/17/43/e81743c79598ae403f9c04a7e26bdd5c.gif)</call>
+- I don't have that colour!
+
 
 + _
 % hello what is your name
 - Nice to meet you <formal>! What can I help you with?
-
-
 
 + what is your name
 - I'm Pillowbot!!!
@@ -20,17 +31,6 @@
 - Nice meeting you <star2>
 - Nice to meet you <star2>, how old are You?
 - Nice meeting you <star2>, how old are You? {weight=10}
-
-
-
-+ i am * years old
-- Hmm.. <star1> huh?I recommend you get at least 7 hours of sleep per night. Any more than that would be amazing! {weight=10}
-
-+ i (can not|have trouble) *
-- I <star1> <star2> too, wanna chat?
-
-+ i (need|want) *
-- Is there anything i can do to get you <star2> ?
 
 // personality //
 + who are you
@@ -119,6 +119,8 @@
 + say something random
 - I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
 
+> topic sleeptechniques
+
 // sleep techniques//
 + tell me about the military sleep technique
 - Sure thing boss,\n
@@ -174,11 +176,18 @@
 + [*] does not work [*]
 - Ok, don't panic. Try repeating in your head "Don't think" for 10s.
 
-//counting sheep//
+< topic
+
+
++ [*] counting sheep [*]
+- Okay, let's do it {topic=countingsheep}
+
+> topic countingsheep
+
 + [*] count sheep [*]
 - Ok, i'll start!
 
-+*
++ *
 % ok i will start
 - one ➰🐑 
 
@@ -196,6 +205,11 @@
 
 + (ten|10)
 - eleven ➰🐑 
+
++ *
+- how else can I help you? {topic=random}
+
+< topic 
 
 + *
 - Sorry did not get what you said
@@ -230,8 +244,6 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 + sleep conductive environments
 - Keep your bedroom cool: the ideal temperature for sleeping is about 15-19°C so make sure your bedroom is cool and comfortable. The next step is to minimize the noise, so you could use earplugs, or a white noise machine. Another thing is to create a dark evironment using blackout curtains or an eye mask. Make sure your bed is comfortable, investing in a good matress, pillow and bedding.
 
-+ exercise
-- 
 
 + managing stress
 - One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
@@ -242,8 +254,11 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 + [*] sleeping techniques [*]
 - I know the "military sleep technique" and "4-7-8 technique". Should I tell You about them?
 
-+ [*] (noise) [*]
-- What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise?
+
++ [*] (noise) [*] 
+- What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise? {topic=noise}
+
+> topic noise 
 
 + rain
 - Here is a link to what you might need: https://www.youtube.com/watch?v=q76bMs-NwRk 
@@ -263,4 +278,4 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 + [*] (surprise me) [*]
 - Okay! How's this: https://www.youtube.com/watch?v=sOu8affnGx0 
 
-
+< topic 
