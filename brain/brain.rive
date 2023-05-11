@@ -4,21 +4,24 @@
 - Hello, what is your name?
 - {random}Hello|Hi|Hi there|Hey{/random}! Can You tell me your name? {weight=10}
 
-+ hi [*]
-@ hello
++
 
 + _
 % hello what is your name
 - Nice to meet you <formal>! What can I help you with?
 
+
+
 + what is your name
-- I'm Pillowbot!
+- I'm Pillowbot!!!
 
 + (my name is|it is) *
 - Nice to meet you <star2>
 - Nice meeting you <star2>
 - Nice to meet you <star2>, how old are You?
 - Nice meeting you <star2>, how old are You? {weight=10}
+
+
 
 + i am * years old
 - Hmm.. <star1> huh?I recommend you get at least 7 hours of sleep per night. Any more than that would be amazing! {weight=10}
@@ -228,6 +231,7 @@ Turn off electronics. Take a warm bath or shower. Practice relaxation techniques
 - Keep your bedroom cool: the ideal temperature for sleeping is about 15-19°C so make sure your bedroom is cool and comfortable. The next step is to minimize the noise, so you could use earplugs, or a white noise machine. Another thing is to create a dark evironment using blackout curtains or an eye mask. Make sure your bed is comfortable, investing in a good matress, pillow and bedding.
 
 + exercise
+- 
 
 + managing stress
 - One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
