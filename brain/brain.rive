@@ -8,10 +8,198 @@
 < object
 
 // intro//
-+ hello [*]
-- Hello, what is your name?
++ (hello|hi|yo|hi there|hello there|whats up)
+- Hello there! 
+^ \n
+^ <span class="action">(ask what the bots name is)</span> {topic=aboutthebot}
 
-+ change color to *
+> topic=aboutthebot
++ (what is your name|whats your name)
+- I'm Pillowbot!!! 
+^ I am a bot programmed and published to help with your sleep patterns and needs. So, how can I assist you?
+^ \n
+^ <span class="action">(say either "advice" or "sleep techniques")</span> {topic=adviceorsleep}
+
++ no
+- 🤡
+
++ *
+- Let's start again 
+< topic 
+
+
+
+> topic adviceorsleep
+
++ [*] (sleep technique|sleep techniques) [*]
+- Of course! would you like to know about the military sleep technique?
+
++ [*] yes [*]
+- The military sleep technique has first\n
+^ been developed by army chefs in order to\n
+^ address the issue of soldiers tiredness.\n
+^ It's first description was documented in\n
+^ Lloyd Bud Winter's book from 1981\n
+^ titled "Relax and Win".\n
+^ It is said to be an ultra-effective trick\n
+^ helping You drift off from 10s-2min!\n
+^ 💤💤💤💤\n
+^ Would You like to learn the steps?\n 
+^ Type "Tell me the steps".
+
++ tell me the steps 
+- Sure thing! Are you ready? Type "yes" or "no".\n
+^ Remember to follow my instructions to see me continue.
+
++ no
+- Alright, what would You like me to do?
+
++ yes
+- Step one: Relax Your face.\n
+^ Close Your eyes.\n 
+^ breath slowly and deeply.\n
+^ Start by relaxing forehead muscles\n 
+^ and work Your way down!\n 
+^ Brows, mouth, jaw, cheeks and eyes!\n 
+^ Type "step 2".
+
++ step 2
+- Step two: Drop your shoulders.\n 
+^ let go of all tension, sink into the bed\n 
+^ relaxt Your biceps, forearms and hands.\n 
+^ Don't forget to breath deep and slow.\n
+^ Type "step 3".
+
++ step 3
+- Now, exhale and relax your chest.\n
+^ Ready for step four?
+
++ step 4
+- Great! Relax your legs. Lest Your thights sink into the bed\n 
+^ Then the same with calfs, ankles and feet.\n 
+^ Should I go on? Type "step 5"
+
++ step 5
+- Perfect! Now clear Your mind.\n 
+^ Choose a relaxing image, like a beach.\n 
+^ Hold onto it and drift off...
+
++ [*] does not work [*]
+- Ok, don't panic. Try repeating in your head "Don't think" for 10s.
+
+//advice
++ [*] advice [*]
+- There are several factors I can offer advice on? Such as sleep schedule, sleep conductive environments, exercise, managing stress. Ask away. 
+
++ [*] (sleep|sleeping|slept) bad [*]
+- Oh! How would you like me to assist you from here?
+
++ [*] (insomnia|disorders) [*]
+- Sleep disorders such as insomnia, sleep apnea, and narcolepsy can disrupt a person's sleep and have negative impacts on their physical and mental health. If you are experiencing sleep problems, it is important to speak with a healthcare professional for proper diagnosis and treatment.
+
++ [*] (sleep better|improve) [*]
+
+
++ sleep schedule
+- My advice is to determine your ideal bedtime. Calculate how many hours of sleep you need for each night and make it a consistent sleep schedule. Consistency is key to training your body to fall asleep and wake up at the same time each day. I know you may not like this... but you should also avoid napping, as it can disrupt your body's natural sleep-wake cycle, so it's best to avoid napping during the day if possible.
+
++ sleep conductive environments
+- Keep your bedroom cool: the ideal temperature for sleeping is about 15-19°C so make sure your bedroom is cool and comfortable. The next step is to minimize the noise, so you could use earplugs, or a white noise machine. Another thing is to create a dark evironment using blackout curtains or an eye mask. Make sure your bed is comfortable, investing in a good matress, pillow and bedding.
+
++ managing stress
+- One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
+
++ *
+- how else can I help you? We could talk about counting sheep or sleep noise?
+
++ [*] counting sheep [*]
+- Okay! Let's do it {topic=countingsheep}
+
++ [*] sleep noise [*]
+- OK! What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise? {topic=sleepnoise}
+
+< topic
+
+
+
++ bedtime routine
+Turn off electronics. Take a warm bath or shower. Practice relaxation techniques. 
+
+
+
+
+
+
+
+
+
+
+
+
+> topic countingsheep
+
++ *
+- ok i will start!! 
+^ one ➰🐑 
+
++ (two|2)
+- three ➰🐑 
+
++ (four|4)
+- five ➰🐑 
+
++ (six|6)
+- seven ➰🐑 
+
++ (eight|8)
+- nine ➰🐑 
+
++ (ten|10)
+- eleven ➰🐑 
+
++ (tweleve|12)
+- why aren't you asleep yet? This usually works quicker. I need to improve, let's try something else. 
+^ <span class="action">(say either "colours" or "meditation")</span> {topic=coloursormediation}
+
+< topic
+
+> topic sleepnoise 
+
++ rain
+- Here is a link to what you might need: https://www.youtube.com/watch?v=q76bMs-NwRk 
+
++ rainforest 
+- Here is a link to what you might need: https://www.youtube.com/watch?v=ubNfkpbxXUs
+
++ sea waves 
+- Here is a link to what you might need: https://www.youtube.com/watch?v=0ANLBX2EgmM
+
++ white noise 
+- Here is a link to what you might need: https://www.youtube.com/watch?v=yLOM8R6lbzg
+
++ [*] (rain|car roof) [*]
+- Here is a link to what you might need: https://www.youtube.com/watch?v=guo8CHurCpY&t=7s
+
++ [*] (surprise me|any) [*]
+- Okay! How's this: https://www.youtube.com/watch?v=sOu8affnGx0 
+
++ *
+- Not working? Let's try something else. 
+^ <span class="action">(say either "colours" or "meditation")</span> 
+
++ [*] colours [*] 
+- Did you know colours can affect how well you sleep? Can I help you? {topic=colours}
+
+< topic 
+
+
+
+> topic colours
+
++ yes
+- Simply say "change colour to [colour of your choice]" 
+
++ change colour to *
 * <star> == green => OK! <call>changebackground url(https://i.pinimg.com/474x/a1/65/23/a16523f219806ae940d34c8ab59f4003--in-the-clouds-the-sky.jpg)</call>
 * <star> == orange => OK! <call>changebackground url(https://ak.picdn.net/shutterstock/videos/9686807/thumb/1.jpg)</call>
 * <star> == yellow => OK! <call>changebackground url(https://il5.picdn.net/shutterstock/videos/18031918/thumb/1.jpg)</call>
@@ -19,40 +207,27 @@
 - I don't have that colour!
 
 
-+ _
-% hello what is your name
-- Nice to meet you <formal>! What can I help you with?
 
-+ what is your name
-- I'm Pillowbot!!!
-
-+ (my name is|it is) *
-- Nice to meet you <star2>
-- Nice meeting you <star2>
-- Nice to meet you <star2>, how old are You?
-- Nice meeting you <star2>, how old are You? {weight=10}
-
-// personality //
-+ who are you
-- I am  <bot name>
-
-+ what is your favourite colour
-- My favourite colour is <bot color>, how about you?
-
-+ what is your favourite movie
-- I personally like <bot movie>, what about You?
-
-+ where are you from
-- I am from <bot location>, I like it here.
-
-+ how old are you
-- Happy You asked, I'm <bot age> old.
-
-+ [*] favourite book [*]
-- I read a lot, but on the top of my list it's deffinetly <bot book>.
+< topic 
 
 
-// Short discussions //
++ [*] (meditation) [*]
+- 
+
+
+
+//random
++ [*] (sleep|sleeping|slept) good [*]
+- Ah! That is good. It would seem you don't need my assistance.
+
++ can you tell me about sleep
+- Yes! What would you like to know about?
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
+- I don't get it!
 
 + how are you
 - I'm great!
@@ -119,163 +294,28 @@
 + say something random
 - I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
 
-> topic sleeptechniques
+// personality //
++ who are you
+- I am  <bot name>
 
-// sleep techniques//
-+ tell me about the military sleep technique
-- Sure thing boss,\n
-^ The military sleep technique has first\n
-^ been developed by army chefs in order to\n
-^ address the issue of soldiers tiredness.\n
-^ It's first description was documented in\n
-^ Lloyd Bud Winter's book from 1981\n
-^ titled "Relax and Win".\n
-^ It is said to be an ultra-effective trick\n
-^ helping You drift off from 10s-2min!\n
-^ 💤💤💤💤\n
-^ Would You like to learn the steps?\n 
-^ Type "Tell me the steps".
++ what is your favourite colour
+- My favourite colour is <bot color>, how about you?
 
-+ tell me the steps 
-- Sure thing! Are you ready? Type "yes" or "no".\n
-^ Remember to follow my instructions to see me continue.
++ what is your favourite movie
+- I personally like <bot movie>, what about You?
 
-+ no
-- Alright, what would You like me to do?
++ where are you from
+- I am from <bot location>, I like it here.
 
-+ yes
-- Step one: Relax Your face.\n
-^ Close Your eyes.\n 
-^ breath slowly and deeply.\n
-^ Start by relaxing forehead muscles\n 
-^ and work Your way down!\n 
-^ Brows, mouth, jaw, cheeks and eyes!\n 
-^ Type "step 2".
++ how old are you
+- Happy You asked, I'm <bot age> old.
 
-+ step 2
-- Step two: Drop your shoulders.\n 
-^ let go of all tension, sink into the bed\n 
-^ relaxt Your biceps, forearms and hands.\n 
-^ Don't forget to breath deep and slow.\n
-^ Type "step 3".
++ [*] favourite book [*]
+- I read a lot, but on the top of my list it's deffinetly <bot book>.
 
-+ step 3
-- Now, exhale and relax your chest.\n
-^ Ready for step four?
-
-+ step 4
-- Great! Relax your legs. Lest Your thights sink into the bed\n 
-^ Then the same with calfs, ankles and feet.\n 
-^ Should I go on? Type "step 5"
-
-+ step 5
-- Perfect! Now clear Your mind.\n 
-^ Choose a relaxing image, like a beach.\n 
-^ Hold onto it and drift off...
-
-+ [*] does not work [*]
-- Ok, don't panic. Try repeating in your head "Don't think" for 10s.
-
-< topic
-
-
+//links 
 + [*] counting sheep [*]
-- Okay, let's do it {topic=countingsheep}
+- Okay! Let's do it {topic=countingsheep}
 
-> topic countingsheep
-
-+ [*] count sheep [*]
-- Ok, i'll start!
-
-+ *
-% ok i will start
-- one ➰🐑 
-
-+ (two|2)
-- three ➰🐑 
-
-+ (four|4)
-- five ➰🐑 
-
-+ (six|6)
-- seven ➰🐑 
-
-+ (eight|8)
-- nine ➰🐑 
-
-+ (ten|10)
-- eleven ➰🐑 
-
-+ *
-- how else can I help you? {topic=random}
-
-< topic 
-
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
-
-+ i have not been sleeping well
-- Sorry to hear that! how would you like me to assist you?
-
-+ [*] (sleep|sleeping|slept) bad [*]
-- Oh! How would you like me to assist you from here?
-
-+ [*] (sleep|sleeping|slept) good [*]
-- Ah! That is good. It would seem you don't need my assistance.
-
-+ can you tell me about sleep
-- Yes! What would you like to know about?
-
-+ [*] (insomnia|disorders) [*]
-- Sleep disorders such as insomnia, sleep apnea, and narcolepsy can disrupt a person's sleep and have negative impacts on their physical and mental health. If you are experiencing sleep problems, it is important to speak with a healthcare professional for proper diagnosis and treatment.
-
-+ [*] (sleep better|improve) [*]
-- There are several factors I can offer advice on? Such as sleep schedule, bed time routines, sleep conductive environments, exercise, managing stress. Ask away.
-
-+ bedtime routine
-Turn off electronics. Take a warm bath or shower. Practice relaxation techniques. 
-
-+ sleep schedule
-- My advice is to determine your ideal bedtime. Calculate how many hours of sleep you need for each night and make it a consistent sleep schedule. Consistency is key to training your body to fall asleep and wake up at the same time each day. I know you may not like this... but you should also avoid napping, as it can disrupt your body's natural sleep-wake cycle, so it's best to avoid napping during the day if possible.
-
-+ sleep conductive environments
-- Keep your bedroom cool: the ideal temperature for sleeping is about 15-19°C so make sure your bedroom is cool and comfortable. The next step is to minimize the noise, so you could use earplugs, or a white noise machine. Another thing is to create a dark evironment using blackout curtains or an eye mask. Make sure your bed is comfortable, investing in a good matress, pillow and bedding.
-
-
-+ managing stress
-- One tip is that you should not do work in your bed and rather on your desk because you don't want your brain to associate work with being in bed as it will not allow your brain to rest when it is time to sleep. 
-
-+ [*] (meditation) [*]
-- 
-
-+ [*] sleeping techniques [*]
-- I know the "military sleep technique" and "4-7-8 technique". Should I tell You about them?
-
-
-+ [*] (noise) [*] 
-- What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise? {topic=noise}
-
-> topic noise 
-
-+ rain
-- Here is a link to what you might need: https://www.youtube.com/watch?v=q76bMs-NwRk 
-
-+ rainforest 
-- Here is a link to what you might need: https://www.youtube.com/watch?v=ubNfkpbxXUs
-
-+ sea waves 
-- Here is a link to what you might need: https://www.youtube.com/watch?v=0ANLBX2EgmM
-
-+ white noise 
-- Here is a link to what you might need: https://www.youtube.com/watch?v=yLOM8R6lbzg
-
-+ [*] (rain|car roof) [*]
-- Here is a link to what you might need: https://www.youtube.com/watch?v=guo8CHurCpY&t=7s
-
-+ [*] (surprise me) [*]
-- Okay! How's this: https://www.youtube.com/watch?v=sOu8affnGx0 
-
-< topic 
++ [*] sleep noise [*]
+- OK! What noise would you like to fall asleep to? Rain on a car roof, a rainforest, sea waves? white noise? {topic=sleepnoise}
