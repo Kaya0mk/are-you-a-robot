@@ -43,7 +43,7 @@ function botNotReady(err) {
 }
 
 
-function changeColour(colour) {
+function changeColor(color) {
   const body = document.querySelector("body");
-  body.style.background = colour
+  body.style.background = color
 }
