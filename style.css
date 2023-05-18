@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 * {
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Rainyhearts';
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ audio {
 }
 
 .title h1 {
-  font-family:'Times New Roman', Times, serif; 
+  font-family: 'Rainyhearts';
   font-size: 30px;
   letter-spacing: 1px;
   color: rgb(23, 26, 65);
@@ -39,17 +39,17 @@ audio {
 }
 
 .chat {
-  background-image:url(https://www.pngkey.com/png/full/1-15550_clouds-pixel-clouds-transparent.png);
+  background-color: white;
+    opacity: 50%;
   background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: center; 
+  margin-top: 30px;
   overflow: scroll; 
   height: 90%;
   width: 150%; 
   display: flex; 
   flex-direction: column;
   padding: 20px 20px 0px 20px;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .chat::-webkit-scrollbar {
@@ -102,7 +102,8 @@ audio {
 
 .actions input {
   height: 30px;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Rainyhearts';
+  font-size: 120%;
   display:block; 
   width: 100%;
   outline: 0;
