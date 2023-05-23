@@ -17,15 +17,103 @@
 > topic=aboutthebot
 + (what is your name|whats your name)
 - I'm Pillowbot!!! 
-^ I am a bot programmed and published to help with your sleep patterns and needs. So, how can I assist you?
-^ \n
-^ <span class="action">(say either "advice" or "sleep techniques")</span> {topic=adviceorsleep}
+^ I am a bot programmed and published to help with your sleep patterns and needs. I love to give advice so I sometimes have promtps below, but you dont have to use them. So, how can I assist you?
+^ <span class="action">(you can say either "advice" or "sleep techniques")</span> {topic=adviceorsleep}
 
-+ no
-- 🤡
++ [*] (sleep|sleeping|slept) good [*]
+- Ah! That is good. It would seem you don't need my assistance.
+
++ can you tell me about sleep
+- Yes! What would you like to know about?
+^ <span class="action">(you can say either "colours" or "meditation")</span> {topic=coloursormediation}
 
 + *
-- Let's start again 
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please repeat that for me?
+- I don't get it!
+
++ how are you
+- I'm great!
+- I'm good, how have you been sleeping?
+- Good :) how is your sleep schedule?
+- Great! You?
+- I'm fine, thanks for asking!
+
++ *
+% i am great
+- is there anything I can assist You with today?
+^ <span class="action">(you can say either "colours" or "meditation")</span> {topic=coloursormediation}
+
++ *
+% is there anything i can assist you with today
+- We can chat or we can learn something fun about sleep\n
+^ ask "what can you do?".
+
++ what can you do
+- Lots. Give You tips how to sleep better, teach a thing or two or simply keep you company.
+
++ [*] teach me [*]
+- I can send you some informative articles.
+
++ my favourite colour is *
+- <set colour=<star>> Wow <get colour> huh? I love it too!
+
++*
+% ah i know a lot of fun facts 
+- Try asking "what are the dangers of smoking?",\n
+^ or "why should I stop smoking?"
+
++*
+% it was nice how was your day
+- Cool!
+- Nice, what did You do? {weight=3}
+
++*
+% nice what did you do
+- Blimey! Sounds fun.
+
++ thank you
+- You are welcome {weight=3}
+- Welcome 
+- No problem {weight=5}
+- No worries! {weight=5}
+- No prob buddy. {weight=10}
+
+// joke //
++ knock knock
+- who's there?
+
++*
+% who is there
+- <star> who?
+
++*
+% * who
+- Lol <star>! You jokester, that's so funny!
+
++ say something random
+- I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
+
+//personality
++ who are you
+- I am  <bot name>
+
++ what is your favourite colour
+- My favourite colour is <bot color>, how about you?
+
++ what is your favourite movie
+- I personally like <bot movie>, what about You?
+
++ where are you from
+- I am from <bot location>, I like it here.
+
++ how old are you
+- Happy You asked, I'm <bot age> old.
+
++ [*] favourite book [*]
+- I read a lot, but on the top of my list it's deffinetly <bot book>.
+
 < topic 
 
 
@@ -121,6 +209,7 @@
 > topic countingsheep
 
 + *
+% okay lets do it
 - ok i will start!! 
 ^ one ➰🐑 
 
@@ -142,6 +231,10 @@
 + (twelve|12)
 - why aren't you asleep yet? This usually works quicker. I need to improve, let's try something else. 
 ^ <span class="action">(say either "colours" or "meditation")</span> {topic=coloursormediation}
+
++ *
+- Are you bored of counting sheep?
+- Let's move on {topic} 
 
 < topic
 
@@ -249,105 +342,6 @@
 
 < topic 
 
-
-
-
-//random
-+ [*] (sleep|sleeping|slept) good [*]
-- Ah! That is good. It would seem you don't need my assistance.
-
-+ can you tell me about sleep
-- Yes! What would you like to know about?
-
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
-
-+ how are you
-- I'm great!
-- I'm good, how have you been sleeping?
-- Good :) how is your sleep schedule?
-- Great! You?
-- I'm fine, thanks for asking!
-
-+ *
-% i am great
-- is there anything I can assist You with today?
-
-+ *
-% is there anything i can assist you with today
-- We can chat or we can learn something fun about sleep\n
-^ ask "what can you do?".
-
-+ what are you
-- I'm a PillowBot! Here to help you get to sleep! Tell me your needs, {weight=3}
-- I'm a potential friend
-
-+ what can you do
-- Lots. Give You tips how to sleep better, teach a thing or two or simply keep you company.
-
-+ [*] teach me [*]
-- I can send you some informative articles.
-
-+ my favourite colour is *
-- <set colour=<star>> Wow <get colour> huh? I love it too!
-
-+*
-% ah i know a lot of fun facts 
-- Try asking "what are the dangers of smoking?",\n
-^ or "why should I stop smoking?"
-
-+*
-% it was nice how was your day
-- Cool!
-- Nice, what did You do? {weight=3}
-
-+*
-% nice what did you do
-- Blimey! Sounds fun.
-
-+ thank you
-- You are welcome {weight=3}
-- Welcome 
-- No problem {weight=5}
-- No worries! {weight=5}
-- No prob buddy. {weight=10}
-
-// joke //
-+ knock knock
-- who's there?
-
-+*
-% who is there
-- <star> who?
-
-+*
-% * who
-- Lol <star>! You jokester, that's so funny!
-
-+ say something random
-- I know a {random}guy|man|lad|gal|kid|block{/random} who wears sandals with socks.
-
-// personality //
-+ who are you
-- I am  <bot name>
-
-+ what is your favourite colour
-- My favourite colour is <bot color>, how about you?
-
-+ what is your favourite movie
-- I personally like <bot movie>, what about You?
-
-+ where are you from
-- I am from <bot location>, I like it here.
-
-+ how old are you
-- Happy You asked, I'm <bot age> old.
-
-+ [*] favourite book [*]
-- I read a lot, but on the top of my list it's deffinetly <bot book>.
 
 //links 
 + [*] counting sheep [*]
