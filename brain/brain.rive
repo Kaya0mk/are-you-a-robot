@@ -19,6 +19,10 @@
 - I'm Pillowbot!!! 
 ^ I am a bot programmed and published to help with your sleep patterns and needs. I love to give advice so I sometimes have promtps below, but you dont have to use them. So, how can I assist you?
 ^ <span class="action">(you can say either "advice" or "sleep techniques")</span> {topic=adviceorsleep}
+- I'm Pillowbot, a virtual talking pillow. What is your name?
+
++ my name is *
+- Nice to meet you, <star1>!
 
 + [*] (sleep|sleeping|slept) good [*]
 - Ah! That is good. It would seem you don't need my assistance.
@@ -26,6 +30,9 @@
 + can you tell me about sleep
 - Yes! What would you like to know about?
 ^ <span class="action">(you can say either "colours" or "meditation")</span> {topic=coloursormediation}
+
++ [*] (move|spin) [*]
+- I just love spinning, don't worry about my little glitch. If you were spinning for as long as I have you'd glitch too.
 
 + *
 - Sorry did not get what you said
